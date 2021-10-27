@@ -11,6 +11,8 @@
 		F41719772723818800E9848F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41719762723818800E9848F /* ContentView.swift */; };
 		F41719792723818C00E9848F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41719782723818C00E9848F /* Assets.xcassets */; };
 		F417197C2723818C00E9848F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F417197B2723818C00E9848F /* Preview Assets.xcassets */; };
+		F42B4F0A272668E5009A33B8 /* blow.caf in Resources */ = {isa = PBXBuildFile; fileRef = F42B4F09272668E4009A33B8 /* blow.caf */; };
+		F4AC2BD12724D321007A1779 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC2BD02724D321007A1779 /* LocalNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		F41719762723818800E9848F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F41719782723818C00E9848F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F417197B2723818C00E9848F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F42B4F09272668E4009A33B8 /* blow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = blow.caf; path = Assets.xcassets/blow.caf; sourceTree = "<group>"; };
+		F4AC2BD02724D321007A1779 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		F4D06A582723C36B00D1A10A /* Wake-Up-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Wake-Up-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +56,12 @@
 		F41719732723818800E9848F /* Wake Up */ = {
 			isa = PBXGroup;
 			children = (
+				F4D06A582723C36B00D1A10A /* Wake-Up-Info.plist */,
 				F41719742723818800E9848F /* Wake_UpApp.swift */,
 				F41719762723818800E9848F /* ContentView.swift */,
+				F4AC2BD02724D321007A1779 /* LocalNotificationManager.swift */,
 				F41719782723818C00E9848F /* Assets.xcassets */,
+				F42B4F09272668E4009A33B8 /* blow.caf */,
 				F417197A2723818C00E9848F /* Preview Content */,
 			);
 			path = "Wake Up";
@@ -125,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42B4F0A272668E5009A33B8 /* blow.caf in Resources */,
 				F417197C2723818C00E9848F /* Preview Assets.xcassets in Resources */,
 				F41719792723818C00E9848F /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AC2BD12724D321007A1779 /* LocalNotificationManager.swift in Sources */,
 				F41719772723818800E9848F /* ContentView.swift in Sources */,
 				F41719752723818800E9848F /* Wake_UpApp.swift in Sources */,
 			);
@@ -269,8 +279,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wake Up/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WZG7PUY6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wake-Up-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,8 +310,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wake Up/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WZG7PUY6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wake-Up-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
