@@ -11,8 +11,19 @@
 		F41719772723818800E9848F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41719762723818800E9848F /* ContentView.swift */; };
 		F41719792723818C00E9848F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41719782723818C00E9848F /* Assets.xcassets */; };
 		F417197C2723818C00E9848F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F417197B2723818C00E9848F /* Preview Assets.xcassets */; };
-		F42B4F0A272668E5009A33B8 /* blow.caf in Resources */ = {isa = PBXBuildFile; fileRef = F42B4F09272668E4009A33B8 /* blow.caf */; };
+		F42B4F0A272668E5009A33B8 /* Blow.caf in Resources */ = {isa = PBXBuildFile; fileRef = F42B4F09272668E4009A33B8 /* Blow.caf */; };
 		F4AC2BD12724D321007A1779 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC2BD02724D321007A1779 /* LocalNotificationManager.swift */; };
+		F4EF894F272A198C0037F558 /* Glass.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF894E272A198C0037F558 /* Glass.caf */; };
+		F4EF8951272A199B0037F558 /* Pop.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8950272A199B0037F558 /* Pop.caf */; };
+		F4EF8953272A19A80037F558 /* Purr.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8952272A19A80037F558 /* Purr.caf */; };
+		F4EF8955272A19B20037F558 /* Tink.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8954272A19B20037F558 /* Tink.caf */; };
+		F4EF895A272A1D6D0037F558 /* Bottle.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8956272A1D6C0037F558 /* Bottle.caf */; };
+		F4EF895B272A1D6D0037F558 /* Basso.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8957272A1D6C0037F558 /* Basso.caf */; };
+		F4EF895C272A1D6D0037F558 /* Sosumi.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8958272A1D6C0037F558 /* Sosumi.caf */; };
+		F4EF895D272A1D6D0037F558 /* Frog.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8959272A1D6D0037F558 /* Frog.caf */; };
+		F4EF8961272A1E350037F558 /* Funk.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF895E272A1E340037F558 /* Funk.caf */; };
+		F4EF8962272A1E350037F558 /* Hero.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF895F272A1E350037F558 /* Hero.caf */; };
+		F4EF8963272A1E350037F558 /* Morse.caf in Resources */ = {isa = PBXBuildFile; fileRef = F4EF8960272A1E350037F558 /* Morse.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +32,20 @@
 		F41719762723818800E9848F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F41719782723818C00E9848F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F417197B2723818C00E9848F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F42B4F09272668E4009A33B8 /* blow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = blow.caf; path = Assets.xcassets/blow.caf; sourceTree = "<group>"; };
+		F42B4F09272668E4009A33B8 /* Blow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blow.caf; path = Assets.xcassets/Blow.caf; sourceTree = "<group>"; };
 		F4AC2BD02724D321007A1779 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		F4D06A582723C36B00D1A10A /* Wake-Up-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Wake-Up-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F4EF894E272A198C0037F558 /* Glass.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Glass.caf; path = Assets.xcassets/Glass.caf; sourceTree = "<group>"; };
+		F4EF8950272A199B0037F558 /* Pop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pop.caf; path = Assets.xcassets/Pop.caf; sourceTree = "<group>"; };
+		F4EF8952272A19A80037F558 /* Purr.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Purr.caf; path = Assets.xcassets/Purr.caf; sourceTree = "<group>"; };
+		F4EF8954272A19B20037F558 /* Tink.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tink.caf; path = Assets.xcassets/Tink.caf; sourceTree = "<group>"; };
+		F4EF8956272A1D6C0037F558 /* Bottle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Bottle.caf; path = Assets.xcassets/Bottle.caf; sourceTree = "<group>"; };
+		F4EF8957272A1D6C0037F558 /* Basso.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Basso.caf; path = Assets.xcassets/Basso.caf; sourceTree = "<group>"; };
+		F4EF8958272A1D6C0037F558 /* Sosumi.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sosumi.caf; path = Assets.xcassets/Sosumi.caf; sourceTree = "<group>"; };
+		F4EF8959272A1D6D0037F558 /* Frog.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Frog.caf; path = Assets.xcassets/Frog.caf; sourceTree = "<group>"; };
+		F4EF895E272A1E340037F558 /* Funk.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Funk.caf; path = Assets.xcassets/Funk.caf; sourceTree = "<group>"; };
+		F4EF895F272A1E350037F558 /* Hero.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hero.caf; path = Assets.xcassets/Hero.caf; sourceTree = "<group>"; };
+		F4EF8960272A1E350037F558 /* Morse.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Morse.caf; path = Assets.xcassets/Morse.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +81,20 @@
 				F4D06A582723C36B00D1A10A /* Wake-Up-Info.plist */,
 				F41719742723818800E9848F /* Wake_UpApp.swift */,
 				F41719762723818800E9848F /* ContentView.swift */,
+				F4EF895E272A1E340037F558 /* Funk.caf */,
+				F4EF895F272A1E350037F558 /* Hero.caf */,
+				F4EF8960272A1E350037F558 /* Morse.caf */,
+				F4EF8957272A1D6C0037F558 /* Basso.caf */,
+				F4EF8956272A1D6C0037F558 /* Bottle.caf */,
+				F4EF8959272A1D6D0037F558 /* Frog.caf */,
+				F4EF8958272A1D6C0037F558 /* Sosumi.caf */,
+				F4EF8954272A19B20037F558 /* Tink.caf */,
+				F4EF8952272A19A80037F558 /* Purr.caf */,
+				F4EF8950272A199B0037F558 /* Pop.caf */,
+				F4EF894E272A198C0037F558 /* Glass.caf */,
 				F4AC2BD02724D321007A1779 /* LocalNotificationManager.swift */,
 				F41719782723818C00E9848F /* Assets.xcassets */,
-				F42B4F09272668E4009A33B8 /* blow.caf */,
+				F42B4F09272668E4009A33B8 /* Blow.caf */,
 				F417197A2723818C00E9848F /* Preview Content */,
 			);
 			path = "Wake Up";
@@ -133,9 +166,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42B4F0A272668E5009A33B8 /* blow.caf in Resources */,
+				F4EF8962272A1E350037F558 /* Hero.caf in Resources */,
+				F42B4F0A272668E5009A33B8 /* Blow.caf in Resources */,
+				F4EF8953272A19A80037F558 /* Purr.caf in Resources */,
+				F4EF8955272A19B20037F558 /* Tink.caf in Resources */,
+				F4EF8951272A199B0037F558 /* Pop.caf in Resources */,
+				F4EF8961272A1E350037F558 /* Funk.caf in Resources */,
+				F4EF895A272A1D6D0037F558 /* Bottle.caf in Resources */,
 				F417197C2723818C00E9848F /* Preview Assets.xcassets in Resources */,
 				F41719792723818C00E9848F /* Assets.xcassets in Resources */,
+				F4EF8963272A1E350037F558 /* Morse.caf in Resources */,
+				F4EF895B272A1D6D0037F558 /* Basso.caf in Resources */,
+				F4EF895C272A1D6D0037F558 /* Sosumi.caf in Resources */,
+				F4EF894F272A198C0037F558 /* Glass.caf in Resources */,
+				F4EF895D272A1D6D0037F558 /* Frog.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

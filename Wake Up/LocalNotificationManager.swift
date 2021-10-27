@@ -22,15 +22,16 @@ class LocalNotificationManager: ObservableObject {
             }
         }
     
-    func startNotifications(interval: Double, variance: Double, length: Double) -> String {
+    func startNotifications(interval: Double, variance: Double, length: Double, sound: String) -> String {
         
+        print("starting with \(interval) \(variance) \(length) \(sound)")
         // cancel any previous notifications we added
         stopNotifications()
         
         let content = UNMutableNotificationContent()
         content.title = "Wake Up!"
         content.categoryIdentifier = "alarm"
-        content.sound = UNNotificationSound.init(named: UNNotificationSoundName.init("blow.caf"))
+        content.sound = UNNotificationSound.init(named: UNNotificationSoundName.init(sound+".caf"))
         
         var lowerBound = interval - variance
         if lowerBound <= 0 {
