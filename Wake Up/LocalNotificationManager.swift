@@ -22,7 +22,7 @@ class LocalNotificationManager: ObservableObject {
             }
         }
     
-    func startNotifications(interval: Double, variance: Double, length: Double, sound: String) -> String {
+    func startNotifications(interval: Double, variance: Double, length: Double, sound: String) -> Double {
         
         print("starting with \(interval) \(variance) \(length) \(sound)")
         // cancel any previous notifications we added
@@ -60,7 +60,7 @@ class LocalNotificationManager: ObservableObject {
             // ensure we don't exceed app limit
             count += 1
             if count == 50 {
-                return "Max 50 timers set. Increase interval for full length."
+                return stopNotifications()
             }
             
             if variance > 0 {
@@ -71,12 +71,16 @@ class LocalNotificationManager: ObservableObject {
             }
         } while (nextInterval > 0.0)
         
-        return "Press home to receive notifications."
+        return Date().addingTimeInterval(length).timeIntervalSince1970
      }
     
-    func stopNotifications() {
+    @discardableResult func stopNotifications() -> Double {
         
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        return currentDate()
      }
 
+    func currentDate() -> Double {
+        return Date().timeIntervalSince1970
+    }
 }

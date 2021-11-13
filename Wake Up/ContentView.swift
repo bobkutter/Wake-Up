@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var interval = UserDefaults.standard.integer(forKey: "interval") // minutes
     @State private var variance = UserDefaults.standard.integer(forKey: "variance") // minutes
     @State private var length = UserDefaults.standard.integer(forKey: "length") // hours
+    @State private var stopDate = UserDefaults.standard.double(forKey: "stop") // msecs since 1970
     
     var sounds = ["Basso", "Blow", "Bottle", "Frog", "Funk", "Glass", "Hero", "Morse", "Pop", "Purr", "Sosumi", "Tink"]
     @State private var selectedSound = UserDefaults.standard.string(forKey: "sound") ?? "Default"
@@ -61,14 +62,23 @@ struct ContentView: View {
                     }
                     Section {
                         Button("Start Timer") {
-                            helpText = notifyMgr.startNotifications(interval: 60*Double(interval),
+                            stopDate = notifyMgr.startNotifications(interval: 60*Double(interval),
                                                                     variance: 60*Double(variance),
                                                                     length: 3600*Double(length),
                                                                     sound: selectedSound)
+                            
+                            print("date \(stopDate)")
+                            if stopDate > Date().timeIntervalSince1970 {
+                                helpText = "Press home to receive notifications."
+                            } else {
+                                helpText = "Too many timers. Increase interval or decrease length."
+                            }
+                            UserDefaults.standard.set(stopDate, forKey: "stop")
                         }
                         Button("Stop Timer") {
-                            notifyMgr.stopNotifications()
+                            stopDate = notifyMgr.stopNotifications()
                             helpText = "Timers stopped."
+                            UserDefaults.standard.set(stopDate, forKey: "stop")
                         }
                     }
                     Section {
@@ -79,7 +89,13 @@ struct ContentView: View {
             .navigationTitle("Wake Up!")
             .onChange(of: scenePhase) { phase in
                 if phase == .active {
-                    helpText = "Press home to receive notifications."
+                    let now = Date().timeIntervalSince1970
+                    print("now \(now) date \(stopDate)")
+                    if stopDate > Date().timeIntervalSince1970 {
+                        helpText = "Timers runnings. Press home."
+                    } else {
+                        helpText = "No timers running."
+                    }
                 }
                 else if phase == .background || phase == .inactive {
                     helpText = ""
